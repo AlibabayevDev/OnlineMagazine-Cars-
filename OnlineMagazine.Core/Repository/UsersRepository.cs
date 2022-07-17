@@ -1,9 +1,9 @@
-﻿using InternetMagazin.Data;
-using InternetMagazin.Data.Models.Entities;
-using OnlineMagazine_Cars_.Data.Interfaces;
+﻿using OnlineMagazine.Data;
+using OnlineMagazine.Data.Models.Entities;
+using OnlineMagazine.Data.Interfaces;
 using System.Collections.Generic;
 
-namespace OnlineMagazine_Cars_.Data.Repository
+namespace OnlineMagazine.Data.Repository
 {
     public class UsersRepository : IAllUsers
     {

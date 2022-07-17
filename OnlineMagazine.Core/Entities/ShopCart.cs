@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InternetMagazin.Data.Models
+namespace OnlineMagazine.Data.Models
 {
     public class ShopCart
     {

@@ -1,11 +1,11 @@
-﻿using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models.Entities;
-using InternetMagazin.ViewModels;
+﻿using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models.Entities;
+using OnlineMagazine.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace InternetMagazin.Controllers
+namespace OnlineMagazine.Controllers
 {
     [Authorize(Roles ="A,SA")]
     public class HomeController : Controller

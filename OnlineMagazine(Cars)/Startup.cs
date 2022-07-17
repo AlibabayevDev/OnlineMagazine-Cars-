@@ -1,9 +1,9 @@
-using InternetMagazin.Data;
-using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models;
-using InternetMagazin.Data.Models.Entities;
-using InternetMagazin.Data.Repository;
-using InternetMagazin.Entities;
+using OnlineMagazine.Data;
+using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models;
+using OnlineMagazine.Data.Models.Entities;
+using OnlineMagazine.Data.Repository;
+using OnlineMagazine.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -12,12 +12,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using OnlineMagazine_Cars_.Data.Interfaces;
-using OnlineMagazine_Cars_.Data.Repository;
-using OnlineMagazine_Cars_.IdentityServer;
+using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Repository;
+using OnlineMagazine.IdentityServer;
 using System;
 
-namespace InternetMagazin
+namespace OnlineMagazine
 {
     public class Startup
     {

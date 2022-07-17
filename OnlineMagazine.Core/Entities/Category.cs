@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace InternetMagazin.Data.Models
+namespace OnlineMagazine.Data.Models
 {
     public class Category
     {

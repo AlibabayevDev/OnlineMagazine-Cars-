@@ -1,4 +1,4 @@
-﻿namespace InternetMagazin.Data.Models
+﻿namespace OnlineMagazine.Data.Models
 {
     public class ShopCartItem
     {

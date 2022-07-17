@@ -1,6 +1,6 @@
-﻿using InternetMagazin.Data.Interfaces;
+﻿using OnlineMagazine.Data.Interfaces;
 
-namespace OnlineMagazine_Cars_.Data.Interfaces
+namespace OnlineMagazine.Data.Interfaces
 {
     public interface IUnitOfWork
     {

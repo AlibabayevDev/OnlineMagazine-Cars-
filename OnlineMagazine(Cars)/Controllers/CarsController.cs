@@ -1,12 +1,12 @@
-﻿using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models;
-using InternetMagazin.ViewModels;
+﻿using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models;
+using OnlineMagazine.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using OnlineMagazine_Cars_.Data.Interfaces;
+using OnlineMagazine.Data.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InternetMagazin.Controllers
+namespace OnlineMagazine.Controllers
 {
     public class CarsController : Controller
     {
@@ -53,11 +53,6 @@ namespace InternetMagazin.Controllers
             ViewBag.Title = "Stranica avtomobilami";
 
             return View(carObj);
-        }
-
-        public IActionResult AddToCars(Car model)
-        {
-            return View();
         }
 
     }

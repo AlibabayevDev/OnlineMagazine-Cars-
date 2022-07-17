@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace InternetMagazin.Migrations
+namespace OnlineMagazine.Migrations
 {
     public partial class Test : Migration
     {

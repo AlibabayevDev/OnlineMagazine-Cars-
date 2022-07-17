@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace InternetMagazin.Data.Models
+namespace OnlineMagazine.Data.Models
 {
     public class Order
     {

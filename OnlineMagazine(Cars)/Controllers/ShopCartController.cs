@@ -1,11 +1,11 @@
-﻿using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models;
-using InternetMagazin.Data.Repository;
-using InternetMagazin.ViewModels;
+﻿using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models;
+using OnlineMagazine.Data.Repository;
+using OnlineMagazine.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-namespace InternetMagazin.Controllers
+namespace OnlineMagazine.Controllers
 {
     public class ShopCartController : Controller
     {

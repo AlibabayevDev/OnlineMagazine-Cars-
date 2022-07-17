@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InternetMagazin.Entities
+namespace OnlineMagazine.Entities
 {
     public class Role
     {

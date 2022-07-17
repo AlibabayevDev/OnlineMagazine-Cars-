@@ -1,7 +1,7 @@
-﻿using InternetMagazin.Data.Models;
+﻿using OnlineMagazine.Data.Models;
 using System.Collections.Generic;
 
-namespace InternetMagazin.Data.Interfaces
+namespace OnlineMagazine.Data.Interfaces
 {
     public interface ICarsCategory
     {

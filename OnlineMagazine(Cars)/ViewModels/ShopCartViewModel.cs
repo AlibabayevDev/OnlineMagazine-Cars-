@@ -1,6 +1,6 @@
-﻿using InternetMagazin.Data.Models;
+﻿using OnlineMagazine.Data.Models;
 
-namespace InternetMagazin.ViewModels
+namespace OnlineMagazine.ViewModels
 {
     public class ShopCartViewModel
     {

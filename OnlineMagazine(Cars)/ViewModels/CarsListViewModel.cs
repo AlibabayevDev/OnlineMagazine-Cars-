@@ -1,7 +1,7 @@
-﻿using InternetMagazin.Data.Models;
+﻿using OnlineMagazine.Data.Models;
 using System.Collections.Generic;
 
-namespace InternetMagazin.ViewModels
+namespace OnlineMagazine.ViewModels
 {
     public class CarsListViewModel
     {

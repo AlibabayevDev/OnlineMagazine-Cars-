@@ -1,7 +1,7 @@
-﻿using InternetMagazin.Data.Models.Entities;
+﻿using OnlineMagazine.Data.Models.Entities;
 using System.Collections.Generic;
 
-namespace OnlineMagazine_Cars_.Data.Interfaces
+namespace OnlineMagazine.Data.Interfaces
 {
     public interface IAllUsers
     {

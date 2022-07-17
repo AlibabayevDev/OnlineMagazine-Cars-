@@ -1,10 +1,9 @@
-﻿using InternetMagazin.Data.Models;
-using Microsoft.AspNetCore.Builder;
+﻿using OnlineMagazine.Data.Models;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InternetMagazin.Data
+namespace OnlineMagazine.Data
 {
     public class DbObjects
     {

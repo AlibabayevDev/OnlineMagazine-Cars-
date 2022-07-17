@@ -1,10 +1,10 @@
-﻿using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models;
+﻿using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InternetMagazin.Data.Repository
+namespace OnlineMagazine.Data.Repository
 {
     public class CarRepository : IAllCars
     {

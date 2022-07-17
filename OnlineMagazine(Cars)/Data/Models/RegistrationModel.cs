@@ -1,4 +1,4 @@
-﻿namespace OnlineMagazine_Cars_.Data.Models
+﻿namespace OnlineMagazine.Data.Models
 {
     public class RegistrationModel
     {

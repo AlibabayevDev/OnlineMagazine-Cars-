@@ -1,7 +1,6 @@
-﻿using OnlineMagazine_Cars_.ViewModels;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace InternetMagazin.Data.Models.Entities
+namespace OnlineMagazine.Data.Models.Entities
 {
     public class User
     {

@@ -1,7 +1,7 @@
-﻿using InternetMagazin.Data.Models.Entities;
+﻿using OnlineMagazine.Data.Models.Entities;
 using OnlineMagazine.Data.Models;
 
-namespace OnlineMagazine_Cars_.ViewModels
+namespace OnlineMagazine.ViewModels
 {
     public class UserViewModel
     {

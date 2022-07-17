@@ -1,8 +1,8 @@
 ﻿using BankApp.Core.Utils;
-using InternetMagazin.Data.Models.Entities;
+using OnlineMagazine.Data.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 
-namespace OnlineMagazine_Cars_.IdentityServer
+namespace OnlineMagazine.IdentityServer
 {
     public class CustomPasswordHasher : IPasswordHasher<User>
     {

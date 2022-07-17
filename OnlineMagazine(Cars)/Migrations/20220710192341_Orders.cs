@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace InternetMagazin.Migrations
+namespace OnlineMagazine.Migrations
 {
     public partial class Orders : Migration
     {

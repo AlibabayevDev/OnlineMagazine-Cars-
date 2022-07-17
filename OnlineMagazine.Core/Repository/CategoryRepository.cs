@@ -1,8 +1,8 @@
-﻿using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models;
+﻿using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models;
 using System.Collections.Generic;
 
-namespace InternetMagazin.Data.Repository
+namespace OnlineMagazine.Data.Repository
 {
     public class CategoryRepository : ICarsCategory
     {

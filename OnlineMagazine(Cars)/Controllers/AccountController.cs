@@ -1,18 +1,18 @@
 ﻿using BankApp.Core.Utils;
-using InternetMagazin.Data.Models.Entities;
+using OnlineMagazine.Data.Models.Entities;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using OnlineMagazine.Data.Models;
-using OnlineMagazine_Cars_.Data.Models;
-using OnlineMagazine_Cars_.ViewModels;
+using OnlineMagazine.Data.Models;
+using OnlineMagazine.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace OnlineMagazine_Cars_.Controllers
+namespace OnlineMagazine.Controllers
 {
     public class AccountController : Controller
     {

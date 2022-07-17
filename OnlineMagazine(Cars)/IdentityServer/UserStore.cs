@@ -1,14 +1,14 @@
-﻿using InternetMagazin.Data;
-using InternetMagazin.Data.Models.Entities;
+﻿using OnlineMagazine.Data;
+using OnlineMagazine.Data.Models.Entities;
 using Microsoft.AspNetCore.Identity;
-using OnlineMagazine_Cars_.Data.Interfaces;
+using OnlineMagazine.Data.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace OnlineMagazine_Cars_.IdentityServer
+namespace OnlineMagazine.IdentityServer
 {
     public class UserStore :  IUserStore<User>,IUserPasswordStore<User>,IUserRoleStore<User>,IUserEmailStore<User>
     {

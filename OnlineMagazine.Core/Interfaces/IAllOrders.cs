@@ -1,7 +1,7 @@
 ﻿
-using InternetMagazin.Data.Models;
+using OnlineMagazine.Data.Models;
 
-namespace InternetMagazin.Data.Interfaces
+namespace OnlineMagazine.Data.Interfaces
 {
     public interface IAllOrders
     {

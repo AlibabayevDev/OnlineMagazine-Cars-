@@ -1,10 +1,10 @@
-﻿using InternetMagazin.Data;
-using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models;
-using InternetMagazin.Data.Repository;
-using OnlineMagazine_Cars_.Data.Interfaces;
+﻿using OnlineMagazine.Data;
+using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models;
+using OnlineMagazine.Data.Repository;
+using OnlineMagazine.Data.Interfaces;
 
-namespace OnlineMagazine_Cars_.Data.Repository
+namespace OnlineMagazine.Data.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {

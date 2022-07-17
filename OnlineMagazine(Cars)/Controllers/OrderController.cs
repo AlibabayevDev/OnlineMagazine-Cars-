@@ -1,8 +1,8 @@
-﻿using InternetMagazin.Data.Interfaces;
-using InternetMagazin.Data.Models;
+﻿using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace InternetMagazin.Controllers
+namespace OnlineMagazine.Controllers
 {
     public class OrderController : Controller
     {

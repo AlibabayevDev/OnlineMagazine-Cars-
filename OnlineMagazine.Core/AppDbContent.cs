@@ -1,9 +1,9 @@
-﻿using InternetMagazin.Data.Models;
-using InternetMagazin.Data.Models.Entities;
+﻿using OnlineMagazine.Data.Models;
+using OnlineMagazine.Data.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
-namespace InternetMagazin.Data
+namespace OnlineMagazine.Data
 {
     public class AppDbContent : DbContext
     {

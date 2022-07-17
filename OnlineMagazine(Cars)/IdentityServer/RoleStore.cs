@@ -1,9 +1,9 @@
-﻿using InternetMagazin.Entities;
+﻿using OnlineMagazine.Entities;
 using Microsoft.AspNetCore.Identity;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace OnlineMagazine_Cars_.IdentityServer
+namespace OnlineMagazine.IdentityServer
 {
     public class RoleStore : IRoleStore<Role>
     {
