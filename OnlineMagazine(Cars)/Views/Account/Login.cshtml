@@ -1,0 +1,48 @@
+﻿@using OnlineMagazine.Data.Models
+
+@model LoginModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/signin.css">
+</head>
+
+<body>
+   <div id="range2">
+
+<div class="outer">
+  <div class="middle">
+    <div class="inner">
+
+        <div class="login-wr">
+          <h2>Вход</h2>
+          
+          <div class="form">
+             <form asp-action="Login" asp-controller="Account" method="post">
+
+                <input asp-for="@Model.Email" class="form-control mb-2" placeholder="Email">
+                <span asp-validation-for="@Model.Email" class="text-danger"></span>
+
+                <input asp-for="@Model.Password" class="form-control mb-2" placeholder="Password">
+                <span asp-validation-for="@Model.Password" class="text-danger"></span>
+
+                <a href="~/Account/Regist"> <p> У вас нет аккаунта? Регистрация </p></a>
+                <button type="submit" name="submit" value=>Вход</button>
+
+             </form>
+
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

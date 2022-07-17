@@ -1,0 +1,27 @@
+﻿@using OnlineMagazine_Cars_.ViewModels
+@using InternetMagazin.Data.Models.Entities
+
+@model UserViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/regist.css">
+</head>
+
+<form asp-action="Complete" asp-controller="Account" method="post">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <input asp-for="@Model.ConfirmPassword" class="form-control mb-2" placeholder="Password">
+    <span>@ViewBag.Error</span>
+
+    <button type="submit" class="registerbtn"Потвердить</button>
+  </div>
+
+</form>
