@@ -1,18 +1,17 @@
 ﻿using OnlineMagazine.Data.Interfaces;
 using OnlineMagazine.Data.Models;
 using Microsoft.AspNetCore.Mvc;
+using OnlineMagazine.Core.Repository;
 
 namespace OnlineMagazine.Controllers
 {
     public class OrderController : Controller
     {
-        private readonly IAllOrders allOrders;
-        private readonly ShopCart shopCart;
+        private readonly IUnitOfWork unitOfWork;
 
-        public OrderController(IAllOrders allOrders, ShopCart shopCart)
+        public OrderController(IUnitOfWork unitOfWork)
         {
-            this.allOrders = allOrders;
-            this.shopCart = shopCart;
+            this.unitOfWork = unitOfWork;
         }
 
         public IActionResult Checkout()
@@ -23,14 +22,14 @@ namespace OnlineMagazine.Controllers
         [HttpPost]
         public IActionResult Checkout(Order order)
         {
-            shopCart.ListShopItems = shopCart.GetShopCartItems();
-            if(shopCart.ListShopItems.Count == 0)
+            unitOfWork.ShopCart.ListShopItems = unitOfWork.ShopCart.GetShopCartItems();
+            if(unitOfWork.ShopCart.ListShopItems.Count == 0)
             {
                 ModelState.AddModelError("", "У вас должны быть товары");
             }
             if(ModelState.IsValid)
             {
-                allOrders.createOrder(order);
+                unitOfWork.AllOrders.createOrder(order);
                 return RedirectToAction("Complete");
             }
             return View(order);

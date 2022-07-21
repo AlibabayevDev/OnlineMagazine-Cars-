@@ -10,15 +10,11 @@ namespace OnlineMagazine.Controllers
 {
     public class CarsController : Controller
     {
-        private readonly IAllCars _allCars;
-        private readonly ICarsCategory _allCarsCategory;
         private readonly IUnitOfWork db;
 
         public CarsController(IAllCars iAllCars,ICarsCategory iCarsCat,IUnitOfWork db)
         {
             this.db = db;
-            _allCars = iAllCars;
-            _allCarsCategory = iCarsCat;
         }
 
         [Route("Cars/List")]
@@ -30,7 +26,7 @@ namespace OnlineMagazine.Controllers
             string currCategory = "";
             if(string.IsNullOrEmpty(category))
             {
-                cars = _allCars.Cars.OrderBy(i => i.Id);
+                cars = db.AllCars.Cars.OrderBy(i => i.Id);
             }
             else
             {
@@ -39,7 +35,7 @@ namespace OnlineMagazine.Controllers
                     cars = db.AllCars.Cars.Where(i => i.categoryId.Equals(1)).OrderBy(i => i.Id);
                     currCategory = "Электромобили";
                 } else if (string.Equals("Fuel", category, System.StringComparison.OrdinalIgnoreCase)){
-                    cars = _allCars.Cars.Where(i => i.categoryId.Equals(2)).OrderBy(i => i.Id);
+                    cars = db.AllCars.Cars.Where(i => i.categoryId.Equals(2)).OrderBy(i => i.Id);
                     currCategory= "Классические автомобили";
                 }
             }

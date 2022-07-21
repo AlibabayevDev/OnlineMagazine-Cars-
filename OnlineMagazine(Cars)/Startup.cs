@@ -16,6 +16,7 @@ using OnlineMagazine.Data.Interfaces;
 using OnlineMagazine.Data.Repository;
 using OnlineMagazine.IdentityServer;
 using System;
+using OnlineMagazine.Core.Repository;
 
 namespace OnlineMagazine
 {
@@ -40,7 +41,7 @@ namespace OnlineMagazine
 
             services.AddMvc();
             services.AddDistributedMemoryCache();
-            //services.AddSession();
+            services.AddSession();
 
             services.AddSession(options =>
             {

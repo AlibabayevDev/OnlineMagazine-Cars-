@@ -1,4 +1,5 @@
-﻿using OnlineMagazine.Data.Models;
+﻿using OnlineMagazine.Core.Repository;
+using OnlineMagazine.Data.Models;
 
 namespace OnlineMagazine.ViewModels
 {

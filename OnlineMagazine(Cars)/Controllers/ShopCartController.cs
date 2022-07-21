@@ -4,6 +4,7 @@ using OnlineMagazine.Data.Repository;
 using OnlineMagazine.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using OnlineMagazine.Core.Repository;
 
 namespace OnlineMagazine.Controllers
 {

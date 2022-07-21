@@ -3,17 +3,16 @@ using OnlineMagazine.Data.Interfaces;
 using OnlineMagazine.Data.Models;
 using OnlineMagazine.Data.Repository;
 using OnlineMagazine.Data.Interfaces;
+using OnlineMagazine.Core.Interfaces;
+using OnlineMagazine.Core.Repository;
 
 namespace OnlineMagazine.Data.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContent appDbConent;
-        private readonly ShopCart shopCart;
-
-        public UnitOfWork(AppDbContent appDbConent,ShopCart shopCart)
+        public UnitOfWork(AppDbContent appDbConent)
         {
-            this.shopCart = shopCart;
             this.appDbConent = appDbConent;
         }
         public IAllCars AllCars => new CarRepository(appDbConent);
@@ -22,6 +21,8 @@ namespace OnlineMagazine.Data.Repository
 
         public ICarsCategory Categories => new CategoryRepository(appDbConent);
 
-        public IAllOrders AllOrders => new OrderRepository(appDbConent,shopCart);
+        public IAllOrders AllOrders => new OrderRepository(appDbConent,this);
+
+        public IShopCart ShopCart => new ShopCart(appDbConent);
     }
 }

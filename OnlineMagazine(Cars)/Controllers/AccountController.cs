@@ -37,7 +37,7 @@ namespace OnlineMagazine.Controllers
 
 
         [HttpPost]
-        public IActionResult Login(LoginModel model)
+        public IActionResult Login(LoginRequestModel model)
         {
             var user = userManager.FindByNameAsync(model.Email).Result;
             if (user == null)

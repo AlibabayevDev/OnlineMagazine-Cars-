@@ -1,4 +1,5 @@
-﻿using OnlineMagazine.Data.Interfaces;
+﻿using OnlineMagazine.Core.Interfaces;
+using OnlineMagazine.Data.Interfaces;
 
 namespace OnlineMagazine.Data.Interfaces
 {
@@ -8,5 +9,6 @@ namespace OnlineMagazine.Data.Interfaces
         ICarsCategory Categories { get; }
         IAllCars AllCars { get; }
         IAllOrders AllOrders { get; }
+        IShopCart ShopCart { get; }
     }
 }

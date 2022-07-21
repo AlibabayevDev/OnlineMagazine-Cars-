@@ -1,13 +1,18 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using OnlineMagazine.Core.Interfaces;
+using OnlineMagazine.Data;
+using OnlineMagazine.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace OnlineMagazine.Data.Models
+namespace OnlineMagazine.Core.Repository
 {
-    public class ShopCart
+    public class ShopCart : IShopCart
     {
         private readonly AppDbContent appDbConent;
         public ShopCart(AppDbContent appDbConent)

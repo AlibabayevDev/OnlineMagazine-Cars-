@@ -7,12 +7,13 @@ namespace OnlineMagazine.Data.Repository
     public class OrderRepository : IAllOrders
     {
         private readonly AppDbContent appDbContent;
-        private readonly ShopCart shopCart;
-
-        public OrderRepository(AppDbContent appDbContent,ShopCart shopCart)
+        //private readonly ShopCart shopCart;
+        private readonly IUnitOfWork unitOfWork;
+        public OrderRepository(AppDbContent appDbContent,IUnitOfWork db)//,ShopCart shopCart)
         {
+            unitOfWork= db;
             this.appDbContent = appDbContent;
-            this.shopCart = shopCart;
+            //this.shopCart = shopCart;
         }
 
         public void createOrder(Order order)
@@ -20,7 +21,7 @@ namespace OnlineMagazine.Data.Repository
             order.OrderTime = DateTime.Now;
             appDbContent.Order.Add(order);
 
-            var items = shopCart.ListShopItems;
+            var items = unitOfWork.ShopCart.ListShopItems;
 
             foreach(var el in items)
             {
