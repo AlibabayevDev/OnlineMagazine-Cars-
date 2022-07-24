@@ -1,5 +1,6 @@
 ﻿using OnlineMagazine.Data.Models.Entities;
 using OnlineMagazine.Data.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace OnlineMagazine.ViewModels
 {

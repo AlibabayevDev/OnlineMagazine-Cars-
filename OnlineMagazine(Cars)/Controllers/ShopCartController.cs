@@ -5,9 +5,11 @@ using OnlineMagazine.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using OnlineMagazine.Core.Repository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OnlineMagazine.Controllers
 {
+    [Authorize]
     public class ShopCartController : Controller
     {
         private readonly IAllCars _carRep;

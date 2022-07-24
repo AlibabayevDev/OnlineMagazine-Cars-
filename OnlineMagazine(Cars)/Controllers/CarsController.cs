@@ -2,12 +2,14 @@
 using OnlineMagazine.Data.Models;
 using OnlineMagazine.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using OnlineMagazine.Data.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
+using OnlineMagazine.Core.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OnlineMagazine.Controllers
 {
+    [Authorize]
     public class CarsController : Controller
     {
         private readonly IUnitOfWork db;
@@ -46,9 +48,17 @@ namespace OnlineMagazine.Controllers
                 currCategory = currCategory,
             };
 
-            ViewBag.Title = "Stranica avtomobilami";
-
             return View(carObj);
+        }
+
+        public IActionResult AddCars()
+        {
+            return View();
+        }
+
+        public IActionResult Save(CarModel model)
+        {
+            return View();
         }
 
     }

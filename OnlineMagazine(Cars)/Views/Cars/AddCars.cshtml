@@ -1,0 +1,53 @@
+﻿@using OnlineMagazine.Core.Data.Models
+
+@model CarModel
+<div class="row">
+	<h3>Добавление Автомобиля</h3>
+	<br>
+
+	<form asp-controller="Cars" asp-action="Save" method="post" class="form-horizontal">
+		<div class="form-group">
+			<label asp-for="Name"></label>
+			<div >
+				<input asp-for="Name" class="form-control"/>
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label asp-for="ShortDesc"></label>
+			<div >
+				<input asp-for="ShortDesc" class="form-control"/>
+				<span asp-validation-for="ShortDesc" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label asp-for="LongDesc"></label>
+			<div >
+				<input asp-for="LongDesc" class="form-control"/>
+				<span asp-validation-for="LongDesc" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label asp-for="Img"></label>
+			<div >
+				<input asp-for="Img" class="form-control" type="file"/>
+				<span asp-validation-for="Img" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label asp-for="Price"></label>
+			<div >
+				<input asp-for="Price" class="form-control"/>
+				<span asp-validation-for="Price" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label asp-for="categoryId"></label>
+			<div >
+				<input asp-for="categoryId" class="form-control"/>
+				<span asp-validation-for="categoryId" class="text-danger"></span>
+			</div>
+		</div>
+		<input class="btn btn-success" type="submit" value="Оформить заказ"/>
+	</form>
+</div>

@@ -12,8 +12,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using OnlineMagazine.Data.Interfaces;
-using OnlineMagazine.Data.Repository;
 using OnlineMagazine.IdentityServer;
 using System;
 using OnlineMagazine.Core.Repository;
@@ -62,7 +60,6 @@ namespace OnlineMagazine
 
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
